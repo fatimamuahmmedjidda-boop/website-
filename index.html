@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Stayza Real Estate - Your trusted partner for buying, renting, and investing in premium Egyptian properties.">
+    <meta name="keywords" content="Real Estate Egypt, Buy Property Egypt, Rent Apartment, Property Investment, Visa Assistance">
+    <title>Stayza Real Estate - Home</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/10.png" alt="Stayza Real Estate Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Home & Investment in Egypt</h1>
+            <p>Buy • Rent • Invest • Visa & Airport Pickup Services</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem;">
+                <a href="services.html" class="btn btn-primary">View Services</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick About -->
+    <section style="background:var(--white); padding:80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Welcome to Stayza Real Estate</h2>
+                <p style="max-width:800px; margin:0 auto; font-size:1.1rem; color:var(--dark);">
+                    Your trusted partner for buying, renting, and investing in premium Egyptian properties. 
+                    We provide comprehensive real estate solutions with full support and expert guidance.
+                </p>
+            </div>
+            
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:2rem; margin-top:3rem;">
+                <div style="text-align:center; padding:2rem; background:var(--light); border-radius:15px;">
+                    <i class="fas fa-home" style="font-size:3rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h3>Premium Properties</h3>
+                    <p>Carefully selected properties in prime locations</p>
+                </div>
+                <div style="text-align:center; padding:2rem; background:var(--light); border-radius:15px;">
+                    <i class="fas fa-shield-alt" style="font-size:3rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h3>Trusted Service</h3>
+                    <p>Transparent and reliable real estate services</p>
+                </div>
+                <div style="text-align:center; padding:2rem; background:var(--light); border-radius:15px;">
+                    <i class="fas fa-handshake" style="font-size:3rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h3>Full Support</h3>
+                    <p>Complete guidance from start to finish</p>
+                </div>
+                <div style="text-align:center; padding:2rem; background:var(--light); border-radius:15px;">
+                    <i class="fas fa-globe-africa" style="font-size:3rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h3>Expert Guidance</h3>
+                    <p>Professional expertise in Egyptian market</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section style="background:var(--light); padding:80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Buy Property</h3>
+                    <p>Find your ideal property to purchase in prime locations with expert guidance.</p>
+                    <a href="services.html#buy" class="btn btn-primary" style="padding:10px 25px; font-size:0.9rem;">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Rent Property</h3>
+                    <p>Explore premium rental options - daily, monthly, or yearly rentals available.</p>
+                    <a href="services.html#rent" class="btn btn-primary" style="padding:10px 25px; font-size:0.9rem;">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Investment</h3>
+                    <p>Secure profitable real estate investment opportunities in Egypt.</p>
+                    <a href="services.html#investment" class="btn btn-primary" style="padding:10px 25px; font-size:0.9rem;">Learn More</a>
+                </div>
+            </div>
+            
+            <div style="text-align:center; margin-top:3rem;">
+                <a href="services.html" class="btn btn-secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background:var(--primary); color:var(--white); padding:80px 0; text-align:center;">
+        <div class="container">
+            <h2 style="color:var(--white); font-size:2.5rem; margin-bottom:1rem;">Ready to Find Your Dream Property?</h2>
+            <p style="font-size:1.2rem; margin-bottom:2rem;">Contact us today for a free consultation</p>
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>STAYZA Real Estate</h4>
+                    <p>Your trusted partner for buying, renting, and investing in Egyptian properties.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/stay_za1/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@stayza_1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/Stayza" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#buy">Buy Property</a></li>
+                        <li><a href="services.html#rent">Rent Property</a></li>
+                        <li><a href="services.html#investment">Investment</a></li>
+                        <li><a href="services.html#visa">Visa Assistance</a></li>
+                        <li><a href="services.html#airport">Airport Pickup</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +20 103 212 9448</li>
+                        <li><i class="fas fa-envelope"></i> info@stayza.org</li>
+                        <li><i class="fas fa-globe"></i> www.stayza.org</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Niado Global Services Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

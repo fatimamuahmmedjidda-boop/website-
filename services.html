@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Stayza Real Estate Services - Buy, Rent, Invest, Visa Assistance, Airport Pickup">
+    <title>Services - Stayza Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html"><img src="./images/10.png" alt="Stayza"></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div style="height:300px; background:linear-gradient(135deg, var(--primary), var(--secondary)); display:flex; align-items:center; justify-content:center; margin-top:80px;">
+        <div style="text-align:center; color:var(--white);">
+            <h1 style="font-size:3rem; color:var(--white); margin-bottom:1rem;">Our Services</h1>
+            <p style="font-size:1.2rem;">Comprehensive Real Estate Solutions</p>
+        </div>
+    </div>
+
+    <section id="buy" style="padding:80px 0; background:var(--white);">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+                <div style="order:1;">
+                    <i class="fas fa-key" style="font-size:4rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">Buy Property</h2>
+                    <p style="font-size:1.1rem; line-height:1.8; margin-bottom:1rem;">Find your ideal property to purchase in prime locations across Egypt. We provide expert guidance throughout the entire buying process.</p>
+                    <ul style="list-style:none; padding:0; margin:2rem 0;">
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Property search assistance</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Legal documentation support</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Negotiation services</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Property inspection</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div style="order:2;">
+                    <img src="./images/IMG_2408.jpg" alt="Buy Property" style="width:100%; border-radius:15px; box-shadow:var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rent" style="padding:80px 0; background:var(--light);">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+                <div style="order:2;">
+                    <i class="fas fa-home" style="font-size:4rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">Rent Property</h2>
+                    <p style="font-size:1.1rem; line-height:1.8; margin-bottom:1rem;">Explore premium rental properties with flexible terms - daily, monthly, or yearly rentals available.</p>
+                    <ul style="list-style:none; padding:0; margin:2rem 0;">
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Flexible rental periods</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Furnished & unfurnished options</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Prime locations</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Quick move-in process</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div style="order:1;">
+                    <img src="./images/IMG_2409.jpg" alt="Rent Property" style="width:100%; border-radius:15px; box-shadow:var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="investment" style="padding:80px 0; background:var(--white);">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+                <div><i class="fas fa-chart-line" style="font-size:4rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">Real Estate Investment</h2>
+                    <p style="font-size:1.1rem; line-height:1.8; margin-bottom:1rem;">Secure profitable investment opportunities in Egypt's growing real estate market with expert market insights.</p>
+                    <ul style="list-style:none; padding:0; margin:2rem 0;">
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Market analysis</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> ROI projections</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Portfolio management</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Investment consulting</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div><img src="./images/IMG_0780.JPG" alt="Investment" style="width:100%; border-radius:15px; box-shadow:var(--shadow);"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visa" style="padding:80px 0; background:var(--light);">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+                <div style="order:2;"><i class="fas fa-passport" style="font-size:4rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">Visa Assistance</h2>
+                    <p style="font-size:1.1rem; line-height:1.8; margin-bottom:1rem;">Professional help with Egypt visa and immigration process. We handle all documentation and requirements.</p>
+                    <ul style="list-style:none; padding:0; margin:2rem 0;">
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Visa application support</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Document preparation</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Immigration consultation</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Follow-up services</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div style="order:1;"><img src="./images/IMG_2408.jpg" alt="Visa" style="width:100%; border-radius:15px; box-shadow:var(--shadow);"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="airport" style="padding:80px 0; background:var(--white);">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+                <div><i class="fas fa-plane-arrival" style="font-size:4rem; color:var(--secondary); margin-bottom:1rem;"></i>
+                    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">Airport Pickup</h2>
+                    <p style="font-size:1.1rem; line-height:1.8; margin-bottom:1rem;">Convenient and safe airport pickup services. Start your journey in Egypt with comfort and peace of mind.</p>
+                    <ul style="list-style:none; padding:0; margin:2rem 0;">
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Professional drivers</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> 24/7 availability</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Comfortable vehicles</li>
+                        <li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary); margin-right:10px;"></i> Direct to destination</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+                <div><img src="./images/IMG_2409.jpg" alt="Airport" style="width:100%; border-radius:15px; box-shadow:var(--shadow);"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>STAYZA Real Estate</h4>
+                    <p>Your trusted partner for buying, renting, and investing in Egyptian properties.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/stay_za1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@stayza_1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/Stayza" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#buy">Buy Property</a></li>
+                        <li><a href="services.html#rent">Rent Property</a></li>
+                        <li><a href="services.html#investment">Investment</a></li>
+                        <li><a href="services.html#visa">Visa Assistance</a></li>
+                        <li><a href="services.html#airport">Airport Pickup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +20 103 212 9448</li>
+                        <li><i class="fas fa-envelope"></i> info@stayza.org</li>
+                        <li><i class="fas fa-globe"></i> www.stayza.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Niado Global Services Limited. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
