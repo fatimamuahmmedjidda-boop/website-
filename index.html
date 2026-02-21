@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Stayza Real Estate - Buy, Rent, Invest in Egypt">
+    <title>Stayza Real Estate - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{--primary:#03466E;--secondary:#EBC487;--white:#ffffff;--light:#f8f9fa;--dark:#333333;}
+        html{scroll-behavior:smooth;overflow-x:hidden;}
+        body{font-family:'Montserrat',sans-serif;color:var(--dark);line-height:1.6;overflow-x:hidden;max-width:100vw;}
+        h1,h2,h3{font-family:'Playfair Display',serif;color:var(--primary);}
+        img{max-width:100%;height:auto;}
+        a{text-decoration:none;color:inherit;}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+        .navbar{position:fixed;top:0;width:100%;background:var(--white);box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000;padding:15px 0;}
+        .nav-container{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 20px;}
+        .logo img{height:60px;width:auto;}
+        .nav-links{display:flex;list-style:none;gap:2rem;}
+        .nav-links a{color:var(--primary);font-weight:500;padding:8px 16px;border-radius:5px;transition:all 0.3s;}
+        .nav-links a:hover,.nav-links a.active{background:var(--primary);color:var(--white);}
+        .mobile-toggle{display:none;flex-direction:column;cursor:pointer;}
+        .mobile-toggle span{width:25px;height:3px;background:var(--primary);margin:3px 0;}
+        .hero{height:100vh;background:linear-gradient(135deg,rgba(3,70,110,0.9),rgba(235,196,135,0.8)),url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"%3E%3Crect fill="%2303466E" width="1200" height="800"/%3E%3C/svg%3E');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white);margin-top:80px;}
+        .hero h1{font-size:3.5rem;margin-bottom:1rem;color:var(--white);text-shadow:2px 2px 4px rgba(0,0,0,0.3);}
+        .hero p{font-size:1.5rem;margin-bottom:2rem;}
+        .btn{padding:15px 35px;border:none;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s;display:inline-block;text-transform:uppercase;margin:5px;}
+        .btn-primary{background:var(--secondary);color:var(--primary);}
+        .btn-primary:hover{background:var(--white);transform:translateY(-3px);}
+        .btn-secondary{background:transparent;color:var(--white);border:2px solid var(--white);}
+        .btn-secondary:hover{background:var(--white);color:var(--primary);}
+        section{padding:80px 0;}
+        .section-title{text-align:center;margin-bottom:3rem;}
+        .section-title h2{font-size:2.5rem;margin-bottom:1rem;position:relative;display:inline-block;}
+        .section-title h2::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:80px;height:4px;background:var(--secondary);}
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;}
+        .service-card{background:var(--white);padding:2rem;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);text-align:center;transition:all 0.3s;}
+        .service-card:hover{transform:translateY(-10px);box-shadow:0 10px 30px rgba(0,0,0,0.15);}
+        .service-card i{font-size:3.5rem;color:var(--secondary);margin-bottom:1rem;}
+        .service-card h3{font-size:1.5rem;margin-bottom:1rem;}
+        .service-card p{margin-bottom:1.5rem;}
+        footer{background:var(--primary);color:var(--white);padding:3rem 0 1.5rem;}
+        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem;}
+        .footer-section h4{color:var(--secondary);margin-bottom:1rem;}
+        .footer-section ul{list-style:none;}
+        .footer-section li{margin-bottom:0.5rem;}
+        .footer-section a{color:var(--white);transition:color 0.3s;}
+        .footer-section a:hover{color:var(--secondary);}
+        .social-links{display:flex;gap:1rem;margin-top:1rem;}
+        .social-links a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;transition:all 0.3s;}
+        .social-links a:hover{background:var(--secondary);}
+        .footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);}
+        @media (max-width:768px){
+        .nav-links{position:fixed;left:-100%;top:80px;flex-direction:column;background:var(--white);width:100%;padding:2rem;box-shadow:0 5px 10px rgba(0,0,0,0.1);transition:0.3s;}
+        .nav-links.active{left:0;}
+        .mobile-toggle{display:flex;}
+        .hero{height:auto;min-height:100vh;padding:60px 20px;}
+        .hero h1{font-size:2rem;}
+        .hero p{font-size:1.1rem;}
+        .logo img{height:45px;}
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo"><a href="index.html"><img src="10.png" alt="Stayza"></a></div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Find Your Perfect Home & Investment in Egypt</h1>
+<p>Buy • Rent • Invest • Visa & Airport Pickup Services</p>
+<div>
+<a href="services.html" class="btn btn-primary">View Services</a>
+<a href="contact.html" class="btn btn-secondary">Contact Us</a>
+</div>
+</div>
+</section>
+
+<section style="background:var(--white);">
+<div class="container">
+<div class="section-title"><h2>Welcome to Stayza Real Estate</h2></div>
+<p style="max-width:800px;margin:0 auto 3rem;text-align:center;font-size:1.1rem;">Your trusted partner for buying, renting, and investing in premium Egyptian properties with full support and expert guidance.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;">
+<div style="text-align:center;padding:2rem;background:var(--light);border-radius:15px;">
+<i class="fas fa-home" style="font-size:3rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h3>Premium Properties</h3>
+<p>Carefully selected properties</p>
+</div>
+<div style="text-align:center;padding:2rem;background:var(--light);border-radius:15px;">
+<i class="fas fa-shield-alt" style="font-size:3rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h3>Trusted Service</h3>
+<p>Transparent and reliable</p>
+</div>
+<div style="text-align:center;padding:2rem;background:var(--light);border-radius:15px;">
+<i class="fas fa-handshake" style="font-size:3rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h3>Full Support</h3>
+<p>Complete guidance</p>
+</div>
+<div style="text-align:center;padding:2rem;background:var(--light);border-radius:15px;">
+<i class="fas fa-globe-africa" style="font-size:3rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h3>Expert Guidance</h3>
+<p>Professional expertise</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--light);">
+<div class="container">
+<div class="section-title"><h2>Our Services</h2></div>
+<div class="services-grid">
+<div class="service-card">
+<i class="fas fa-key"></i>
+<h3>Buy Property</h3>
+<p>Find your ideal property to purchase in prime locations with expert guidance.</p>
+<a href="services.html#buy" class="btn btn-primary" style="padding:10px 25px;font-size:0.9rem;">Learn More</a>
+</div>
+<div class="service-card">
+<i class="fas fa-home"></i>
+<h3>Rent Property</h3>
+<p>Explore premium rental options - daily, monthly, or yearly rentals available.</p>
+<a href="services.html#rent" class="btn btn-primary" style="padding:10px 25px;font-size:0.9rem;">Learn More</a>
+</div>
+<div class="service-card">
+<i class="fas fa-chart-line"></i>
+<h3>Investment</h3>
+<p>Secure profitable real estate investment opportunities in Egypt.</p>
+<a href="services.html#investment" class="btn btn-primary" style="padding:10px 25px;font-size:0.9rem;">Learn More</a>
+</div>
+</div>
+<div style="text-align:center;margin-top:3rem;">
+<a href="services.html" class="btn btn-secondary">View All Services</a>
+</div>
+</div>
+</section>
+
+<section style="background:var(--primary);color:var(--white);text-align:center;">
+<div class="container">
+<h2 style="color:var(--white);font-size:2.5rem;margin-bottom:1rem;">Ready to Find Your Dream Property?</h2>
+<p style="font-size:1.2rem;margin-bottom:2rem;">Contact us today for a free consultation</p>
+<a href="contact.html" class="btn btn-primary">Get Started</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h4>STAYZA Real Estate</h4>
+<p>Your trusted partner for buying, renting, and investing in Egyptian properties.</p>
+<div class="social-links">
+<a href="https://www.instagram.com/stay_za1/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@stayza_1" target="_blank"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.facebook.com/Stayza" target="_blank"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+<div class="footer-section">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Services</h4>
+<ul>
+<li><a href="services.html#buy">Buy Property</a></li>
+<li><a href="services.html#rent">Rent Property</a></li>
+<li><a href="services.html#investment">Investment</a></li>
+<li><a href="services.html#visa">Visa Assistance</a></li>
+<li><a href="services.html#airport">Airport Pickup</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contact</h4>
+<ul>
+<li><i class="fas fa-phone"></i> +20 103 212 9448</li>
+<li><a href="mailto:info@stayza.org">info@stayza.org</a></li>
+<li>www.stayza.org</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Niado Global Services Limited. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
