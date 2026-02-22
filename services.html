@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Services - Stayza Real Estate</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--primary:#03466E;--secondary:#EBC487;--white:#fff;--light:#f8f9fa;--dark:#333;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{font-family:'Montserrat',sans-serif;color:var(--dark);line-height:1.6;overflow-x:hidden;}
+h1,h2,h3{font-family:'Playfair Display',serif;color:var(--primary);}
+img{max-width:100%;height:auto;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;}
+.navbar{position:fixed;top:0;width:100%;background:var(--white);box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000;padding:15px 0;}
+.nav-container{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 20px;}
+.logo img{height:80px;}
+.nav-links{display:flex;list-style:none;gap:2rem;align-items:center;}
+.nav-links a{color:var(--primary);font-weight:500;padding:8px 16px;border-radius:5px;transition:all 0.3s;}
+.nav-links a:hover,.nav-links a.active{background:var(--primary);color:var(--white);}
+.mobile-toggle{display:none;flex-direction:column;cursor:pointer;}
+.mobile-toggle span{width:25px;height:3px;background:var(--primary);margin:3px 0;}
+section{padding:80px 0;}
+.btn{padding:15px 35px;border:none;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s;display:inline-block;text-transform:uppercase;}
+.btn-primary{background:var(--secondary);color:var(--primary);}
+.btn-primary:hover{transform:translateY(-3px);}
+footer{background:var(--primary);color:var(--white);padding:3rem 0 1.5rem;}
+.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem;}
+.footer-section h4{color:var(--secondary);margin-bottom:1rem;}
+.footer-section ul{list-style:none;}
+.footer-section li{margin-bottom:0.5rem;}
+.footer-section a{color:var(--white);transition:color 0.3s;}
+.footer-section a:hover{color:var(--secondary);}
+.social-links{display:flex;gap:1rem;margin-top:1rem;}
+.social-links a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;}
+.social-links a:hover{background:var(--secondary);}
+.footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);}
+@media (max-width:768px){
+.nav-links{position:fixed;left:-100%;top:90px;flex-direction:column;background:var(--white);width:100%;padding:2rem;transition:0.3s;}
+.nav-links.active{left:0;}
+.mobile-toggle{display:flex;}
+.logo img{height:60px;}
+section{padding:60px 20px;}
+section>div>div[style*="grid"]{grid-template-columns:1fr!important;}
+section img{width:100%!important;max-width:500px;margin:0 auto;display:block;}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo"><a href="index.html"><img src="logo.png" alt="Stayza"></a></div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html" class="active">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+
+<div style="height:300px;background:linear-gradient(135deg,var(--primary),var(--secondary));display:flex;align-items:center;justify-content:center;margin-top:90px;">
+<div style="text-align:center;color:var(--white);">
+<h1 style="font-size:3rem;color:var(--white);">Our Services</h1>
+<p style="font-size:1.2rem;">Comprehensive Real Estate Solutions</p>
+</div>
+</div>
+
+<section id="buy" style="background:var(--white);">
+<div class="container">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+<div>
+<i class="fas fa-key" style="font-size:4rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h2 style="font-size:2.5rem;margin-bottom:1.5rem;">Buy Property</h2>
+<p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">Find your ideal property to purchase in prime locations.</p>
+<ul style="list-style:none;padding:0;margin:2rem 0;">
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Property search assistance</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Legal documentation</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Negotiation services</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Property inspection</li>
+</ul>
+<a href="contact.html" class="btn btn-primary">Contact Us</a>
+</div>
+<div>
+<img src="buy-service.png" alt="Buy Property" style="width:100%;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+</div>
+</div>
+</div>
+</section>
+
+<section id="rent" style="background:var(--light);">
+<div class="container">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+<div style="order:2;">
+<i class="fas fa-home" style="font-size:4rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h2 style="font-size:2.5rem;margin-bottom:1.5rem;">Rent Property</h2>
+<p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">Premium rental properties with flexible terms.</p>
+<ul style="list-style:none;padding:0;margin:2rem 0;">
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Flexible rental periods</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Furnished options</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Prime locations</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Quick move-in</li>
+</ul>
+<a href="contact.html" class="btn btn-primary">Contact Us</a>
+</div>
+<div style="order:1;">
+<img src="rent-service.png" alt="Rent Property" style="width:100%;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+</div>
+</div>
+</div>
+</section>
+
+<section id="investment" style="background:var(--white);">
+<div class="container">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+<div>
+<i class="fas fa-chart-line" style="font-size:4rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h2 style="font-size:2.5rem;margin-bottom:1.5rem;">Real Estate Investment</h2>
+<p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">Profitable investment opportunities.</p>
+<ul style="list-style:none;padding:0;margin:2rem 0;">
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Market analysis</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> ROI projections</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Portfolio management</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Consulting</li>
+</ul>
+<a href="contact.html" class="btn btn-primary">Contact Us</a>
+</div>
+<div>
+<img src="investment-service.png" alt="Investment" style="width:100%;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+</div>
+</div>
+</div>
+</section>
+
+<section id="visa" style="background:var(--light);">
+<div class="container">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+<div style="order:2;">
+<i class="fas fa-passport" style="font-size:4rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h2 style="font-size:2.5rem;margin-bottom:1.5rem;">Visa Assistance</h2>
+<p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">Professional visa and immigration help.</p>
+<ul style="list-style:none;padding:0;margin:2rem 0;">
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Visa application support</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Document preparation</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Immigration consultation</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Follow-up services</li>
+</ul>
+<a href="contact.html" class="btn btn-primary">Contact Us</a>
+</div>
+<div style="order:1;">
+<img src="visa-service.png" alt="Visa" style="width:100%;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+</div>
+</div>
+</div>
+</section>
+
+<section id="airport" style="background:var(--white);">
+<div class="container">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+<div>
+<i class="fas fa-plane-arrival" style="font-size:4rem;color:var(--secondary);margin-bottom:1rem;"></i>
+<h2 style="font-size:2.5rem;margin-bottom:1.5rem;">Airport Pickup</h2>
+<p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">Safe and convenient airport services.</p>
+<ul style="list-style:none;padding:0;margin:2rem 0;">
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Professional drivers</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> 24/7 availability</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Comfortable vehicles</li>
+<li style="padding:0.5rem 0;"><i class="fas fa-check" style="color:var(--secondary);margin-right:10px;"></i> Direct to destination</li>
+</ul>
+<a href="contact.html" class="btn btn-primary">Contact Us</a>
+</div>
+<div>
+<img src="airport-service.png" alt="Airport" style="width:100%;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h4>STAYZA Real Estate</h4>
+<p>Your trusted partner in Egyptian properties.</p>
+<div class="social-links">
+<a href="https://www.instagram.com/stay_za1/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@stayza_1" target="_blank"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61576272747304" target="_blank"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+<div class="footer-section">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Services</h4>
+<ul>
+<li><a href="services.html#buy">Buy Property</a></li>
+<li><a href="services.html#rent">Rent Property</a></li>
+<li><a href="services.html#investment">Investment</a></li>
+<li><a href="services.html#visa">Visa</a></li>
+<li><a href="services.html#airport">Airport Pickup</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contact</h4>
+<ul>
+<li><i class="fas fa-phone"></i> +20 103 212 9448</li>
+<li><a href="mailto:info@stayza.org">info@stayza.org</a></li>
+<li>www.stayza.org</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 Niado Global Services Limited. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
